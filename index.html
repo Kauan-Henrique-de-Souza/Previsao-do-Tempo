@@ -12,21 +12,27 @@
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- LINK JS -->
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="">
-        <input placeholder="Digite o nome da cidade">
+    <div class="caixa-maior">
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
         
-        <button>Buscar</button>
+        <button class="botao-buscar" onclick="cliqueiNoBotao()">
+            <img class="img-buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Lupa de busca">
+        </button>
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo em São Paulo</h2>
 
-        <h2>Tempo em São Paulo</h2>
+            <p class="temp">21°C</p>
+        </div>
 
-        <p>21°C</p>
-
-        <img src="https://openweathermap.org/img/wn/04n.png" alt="icone sobre informação do tempo"> <p>Nublado</p>
-
-        <p>Umidade: 76%</p>
-
+        <div class="caixa-menor">
+            <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone sobre informação do tempo"><p class="texto-previsao">Nublado</p>
+        </div>
+        <p class="umidade">Umidade: 76%</p>
     </div>
 </body>
 </html>
